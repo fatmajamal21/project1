@@ -107,8 +107,6 @@
             <a href="#">نسيت كلمة المرور؟</a>
             <div class="sing-up ">
                 <a href="#">sing up</a>
-                <div class="sing-up ">
-                    <a href="#">sing up</a>
         </div>
     </div>
     </body>
