@@ -80,6 +80,19 @@
         .forgot-password a:hover {
             text-decoration: underline;
         }
+        
+        .sing-up {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .sing-up a {
+            text-decoration: none;
+            color: #0f7a3c;
+        }
+        .sing-up a:hover {
+            color: #17cc62;
+            /* text-decoration: underline; */
+        }
     </style>
     </head>
     <body>
@@ -92,6 +105,10 @@
         </form>
         <div class="forgot-password">
             <a href="#">نسيت كلمة المرور؟</a>
+            <div class="sing-up ">
+                <a href="#">sing up</a>
+                <div class="sing-up ">
+                    <a href="#">sing up</a>
         </div>
     </div>
     </body>
