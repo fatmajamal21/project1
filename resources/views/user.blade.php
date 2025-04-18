@@ -98,9 +98,10 @@
     <body>
     <div class="login-container">
         <h2>تسجيل الدخول</h2>
-        <form>
-            <input type="text" class="input-field" placeholder="البريد الإلكتروني" required>
-            <input type="password" class="input-field" placeholder="كلمة المرور" required>
+        <form action="{{ url('/submit-form') }}" method="POST">
+            @csrf
+            <input  name="email" id="email" type="email" class="input-field" placeholder="البريد الإلكتروني" required>
+            <input  name="password" type="password" id="password" class="input-field" placeholder="كلمة المرور" required>
             <button type="submit" class="btn">دخول</button>
         </form>
         <div class="forgot-password">
@@ -111,3 +112,7 @@
     </div>
     </body>
 </html>
+
+
+
+

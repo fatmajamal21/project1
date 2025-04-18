@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\UserController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/', function () {
-    return view('first');
-});
+
+Route::get('/user', [UserController::class, 'showUserForm']);
+Route::post('/submit-form', [UserController::class, 'submitForm']);
+Route::get('/ok', [UserController::class, 'showOkPage'])->name('ok');
